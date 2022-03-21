@@ -5,7 +5,7 @@ import { IUser } from '../../../interfaces/IUser';
 import { usersFetchFailure, usersFetchSuccess } from './usersReducer';
 
 
-function* fetchUsers() {
+export function* fetchUsers() {
   try {
     const users: IUser[] = yield call(getUsers);
 

@@ -2,14 +2,14 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { IUser } from '../../../interfaces/IUser';
 
 
-interface UsersState {
+export interface UsersState {
   users: IUser[];
   pending: boolean;
   error: string | null;
 }
 
 
-const initialState: UsersState = {
+export const initialState: UsersState = {
   users: [],
   pending: false,
   error: null,
